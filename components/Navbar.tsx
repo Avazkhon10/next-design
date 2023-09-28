@@ -1,19 +1,30 @@
 // components/Header.tsx
 import React from "react";
+import Link from "next/link";
 
-const Header: React.FC = () => {
+export default function Navbar() {
   return (
-    <header className="bg-blue-500 p-4 text-white">
-      <nav className="flex justify-between items-center">
-        <div>
-          <h1 className="text-2xl font-bold">Udemy Clone</h1>
-        </div>
-        <div>
-          {/* Add navigation links or user authentication here */}
-        </div>
-      </nav>
-    </header>
-  );
-};
+    <div className="flex list-none flex-col space-y-2 text-lg font-light font-medium text-gray-500 text-white dark:text-gray-400 sm:flex-row sm:space-x-6 sm:space-y-0">
+      <li>
+        <Link href="#">Main</Link>
+      </li>
+      <li>
+        <Link href="#">Services</Link>
+      </li>
 
-export default Header;
+      <li>
+        <Link href="/about">Incoterms</Link>
+      </li>
+      <li>
+        <Link href="/about">Useful articles</Link>
+      </li>
+
+      <li>
+        <Link href="/about">Contacts</Link>
+      </li>
+      <li>
+        <Link href="/about">Distance calculator</Link>
+      </li>
+    </div>
+  );
+}
