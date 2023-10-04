@@ -8,12 +8,11 @@ import Link from "next/link";
 import { useRouter } from 'next/router'; //addition
 
 const navigation = [
-  { name: "Main", href: "/", current: true },
-  { name: "Services", href: "Services", current: false },
-  { name: "Incoterms", href: "#", current: false },
+  { name: "Explore", href: "/", current: true },
+  { name: "Pricing", href: "Services", current: false },
+  { name: "Blog", href: "#", current: false },
   { name: "Contacts", href: "#", current: false },
-  { name: "Distance Calculator", href: "#", current: false },
-  { name: "Hello", href: "#", current: false },
+  { name: "About Us", href: "#", current: false },
 ];
 
 function classNames(...classes: string[]) {
